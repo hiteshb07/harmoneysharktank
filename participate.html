@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Participation Form - Harmony Shark Tank</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background: #fff;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    form {
+      width: 100%;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 8px 0 4px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      background: #ff6f61;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    input[type="submit"]:hover {
+      background: #e65c50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Harmony Shark Tank</h1>
+    <h2>Participation Form</h2>
+    <form id="participationForm" method="post" action="">
+      <!-- 1. Basic Information -->
+      <fieldset>
+        <legend>Basic Information</legend>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="emailAddress">Email Address:</label>
+        <input type="email" id="emailAddress" name="emailAddress" required />
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required />
+
+        <label>Preferred Communication Method:</label>
+        <input type="radio" id="commEmail" name="communicationMethod" value="Email" required />
+        <label for="commEmail" style="display:inline;">Email</label>
+        <input type="radio" id="commPhone" name="communicationMethod" value="Phone" />
+        <label for="commPhone" style="display:inline;">Phone</label>
+        <input type="radio" id="commWhatsApp" name="communicationMethod" value="WhatsApp" />
+        <label for="commWhatsApp" style="display:inline;">WhatsApp</label>
+      </fieldset>
+
+      <!-- 2. Team Details -->
+      <fieldset>
+        <legend>Team Details</legend>
+        <label for="teamName">Team Name (if applicable):</label>
+        <input type="text" id="teamName" name="teamName" />
+
+        <label>Are you participating solo or as a team?</label>
+        <input type="radio" id="solo" name="participationType" value="Solo" required />
+        <label for="solo" style="display:inline;">Solo</label>
+        <input type="radio" id="team" name="participationType" value="Team" />
+        <label for="team" style="display:inline;">Team</label>
+
+        <label for="secondMemberName">Second Team Member’s Name (if applicable):</label>
+        <input type="text" id="secondMemberName" name="secondMemberName" />
+
+        <label for="secondMemberContact">Second Team Member’s Email &amp; Phone (if applicable):</label>
+        <input type="text" id="secondMemberContact" name="secondMemberContact" />
+      </fieldset>
+
+      <!-- 3. Pitch Information -->
+      <fieldset>
+        <legend>Pitch Information</legend>
+        <label for="businessTitle">Title of Business Idea:</label>
+        <input type="text" id="businessTitle" name="businessTitle" required />
+
+        <label for="businessDescription">Brief Description (Max 200 words):</label>
+        <textarea id="businessDescription" name="businessDescription" rows="5" maxlength="1500" required></textarea>
+
+        <label>Do you have any prior entrepreneurship experience?</label>
+        <input type="radio" id="expYes" name="entrepreneurshipExperience" value="Yes" required />
+        <label for="expYes" style="display:inline;">Yes</label>
+        <input type="radio" id="expNo" name="entrepreneurshipExperience" value="No" />
+        <label for="expNo" style="display:inline;">No</label>
+
+        <label for="competitionGoals">What do you hope to gain from this competition?</label>
+        <input type="text" id="competitionGoals" name="competitionGoals" required />
+      </fieldset>
+
+      <!-- 4. Event Logistics -->
+      <fieldset>
+        <legend>Event Logistics</legend>
+        <label for="pitchDate">Preferred Pitch Date:</label>
+        <select id="pitchDate" name="pitchDate" required>
+          <option value="">--Select a Date--</option>
+          <option value="8th March">8th March</option>
+          <option value="22nd March">22nd March</option>
+          <option value="5th April">5th April</option>
+          <option value="19th April">19th April</option>
+        </select>
+
+        <label>Participation Mode:</label>
+        <input type="radio" id="inPerson" name="participationMode" value="In-person" required />
+        <label for="inPerson" style="display:inline;">In-person</label>
+        <input type="radio" id="online" name="participationMode" value="Online" />
+        <label for="online" style="display:inline;">Online</label>
+      </fieldset>
+
+      <!-- 5. Additional Comments -->
+      <fieldset>
+        <legend>Additional Comments</legend>
+        <label for="additionalComments">Any questions or special requests?</label>
+        <textarea id="additionalComments" name="additionalComments" rows="4"></textarea>
+      </fieldset>
+
+      <div style="text-align: center;">
+        <input type="submit" value="Submit Participation" />
+      </div>
+    </form>
+  </div>
+</body>
+</html>

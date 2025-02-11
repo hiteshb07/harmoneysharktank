@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harmony Shark Tank</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      background: #ff6f61;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .container {
+      padding: 20px;
+      max-width: 960px;
+      margin: auto;
+      background: #fff;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    /* Modal styling for Contact Us */
+    .modal {
+      display: none; 
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 500px;
+      position: relative;
+    }
+    .close {
+      color: #aaa;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .close:hover {
+      color: #000;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0 12px 0;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #ff6f61;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #e65c50;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harmony Shark Tank</h1>
+    <p>Pitch your business idea, gain exposure, and get ready for a Shark Tank experience!</p>
+    <nav>
+      <!-- The Participate button goes to the participation form page -->
+      <button onclick="location.href='participate.html'">Participate</button>
+      <button id="contactBtn">Contact Us</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Event Details</h2>
+    <p><strong>Date &amp; Time:</strong> Saturdays at noon starting March 8th</p>
+    <p><strong>Location:</strong> 36 Harmony Hill, Dedham, MA 02026 &amp; Online</p>
+    <p><strong>Participant Fee:</strong> $20 per team (pooled and awarded to the episode winner)</p>
+    <p><strong>Team Size:</strong> Maximum of 2 participants per team</p>
+    <p><strong>Pitch Duration:</strong> 20 minutes (10 minutes for presentation, 10 minutes for evaluation &amp; scoring)</p>
+
+    <h3>Event Structure</h3>
+    <table>
+      <tr>
+        <th>Feature</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Total Episodes</td>
+        <td>4 biweekly episodes + 1 Finale</td>
+      </tr>
+      <tr>
+        <td>Pitch Slots</td>
+        <td>Must be booked one week in advance</td>
+      </tr>
+      <tr>
+        <td>Finale</td>
+        <td>Top 3 ideas pitch to guest investors</td>
+      </tr>
+    </table>
+
+    <h3>Mission &amp; Vision</h3>
+    <p><strong>Mission:</strong> Provide aspiring entrepreneurs with exposure, idea validation, and confidence-building in their entrepreneurial journey.</p>
+    <p><strong>Vision:</strong> To identify and pursue one validated idea annually by forming a team and developing it into a tangible business.</p>
+
+    <h3>Key Benefits</h3>
+    <ul>
+      <li>Simulated Shark Tank-level experience</li>
+      <li>Initial exposure &amp; idea validation</li>
+      <li>Opportunity to expand network &amp; form teams</li>
+      <li>Potential funding &amp; mentorship from industry leaders</li>
+      <li>The winning idea will be actively developed over the next year</li>
+    </ul>
+
+    <h3>Scoring System</h3>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Evaluation Criteria</th>
+      </tr>
+      <tr>
+        <td>Creativity</td>
+        <td>How innovative is the idea?</td>
+      </tr>
+      <tr>
+        <td>Feasibility</td>
+        <td>Can this idea be realistically implemented?</td>
+      </tr>
+      <tr>
+        <td>Presentation</td>
+        <td>How compelling was the pitch?</td>
+      </tr>
+    </table>
+    <p><em>Final Score Calculation: Normalized Final Score = (Sum of all scores × 100) / (Max possible score)</em></p>
+
+    <h3>Additional Details</h3>
+    <ul>
+      <li>Confidentiality: All attendees will sign an NDA.</li>
+      <li>Marketing &amp; Recording: Episodes will be recorded (with participant consent).</li>
+    </ul>
+
+    <h3>Ultimate Goal</h3>
+    <p>The top-scoring idea from the finale will be actively pursued by forming a dedicated team to turn it into a real business with the support of mentors and investors.</p>
+
+    <h3>Call to Action</h3>
+    <p>Get your ideas ready, refine your pitch, and believe in your entrepreneurial potential. Your startup journey might begin sooner than you think! 🚀</p>
+  </div>
+
+  <!-- Contact Us Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="contactName">Your Name:</label>
+        <input type="text" id="contactName" name="contactName" required />
+
+        <label for="contactEmail">Your Email:</label>
+        <input type="email" id="contactEmail" name="contactEmail" required />
+
+        <label for="contactMessage">Your Query/Feedback:</label>
+        <textarea id="contactMessage" name="contactMessage" rows="4" required></textarea>
+
+        <input type="submit" value="Send Message" />
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Modal functionality for "Contact Us"
+    const modal = document.getElementById("contactModal");
+    const contactBtn = document.getElementById("contactBtn");
+    const closeModal = document.getElementById("closeModal");
+
+    contactBtn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    closeModal.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+
+    // Handle contact form submission with mailto (this opens the user's email client)
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("contactName").value;
+      const email = document.getElementById("contactEmail").value;
+      const message = document.getElementById("contactMessage").value;
+      const subject = encodeURIComponent("Harmony Shark Tank Query/Feedback from " + name);
+      const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message);
+      window.location.href =
+        "mailto:hitesh.bhadana@3ds.com,Kishore.PAGIDI@3ds.com?subject=" +
+        subject +
+        "&body=" +
+        body;
+      modal.style.display = "none";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
