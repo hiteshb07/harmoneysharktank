@@ -17,7 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.style.display = "none";
       }
     });
-  
-    // Optionally, add AJAX form submission here if you prefer not to reload the page.
   });
   
